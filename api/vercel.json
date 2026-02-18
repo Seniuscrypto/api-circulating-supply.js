@@ -1,15 +1,3 @@
-{
-  "version": 2,
-  "builds": [
-    {
-      "src": "api/**/*.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/circulating-supply",
-      "dest": "/api/circulating-supply.js"
-    }
-  ]
+json{
+  "version": 2
 }
