@@ -34,5 +34,5 @@ module.exports = async (req, res) => {
   });
 
   const supply = data.result.value.uiAmount;
-  res.status(200).send(supply.toString());
+  res.status(200).json({ circulatingSupply: supply });
 };
