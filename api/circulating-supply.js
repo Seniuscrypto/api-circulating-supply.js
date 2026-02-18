@@ -1,7 +1,7 @@
-const MINT_ADDRESS = "7fj85y28pKMndm4So66Szkb5GMGfLHFEkwsZdDx2pump";
+jsconst MINT_ADDRESS = "7fj85y28pKMndm4So66Szkb5GMGfLHFEkwsZdDx2pump";
 const RPC_URL = "https://api.mainnet-beta.solana.com";
 
-export default async function handler(req, res) {
+module.exports = async (req, res) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Cache-Control", "s-maxage=60, stale-while-revalidate");
 
@@ -23,4 +23,4 @@ export default async function handler(req, res) {
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
-}
+};
