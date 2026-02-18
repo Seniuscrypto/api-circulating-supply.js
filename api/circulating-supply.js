@@ -1,3 +1,4 @@
+// v2
 const https = require("https");
 
 const MINT_ADDRESS = "7fj85y28pKMndm4So66Szkb5GMGfLHFEkwsZdDx2pump";
